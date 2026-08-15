@@ -1,6 +1,11 @@
 # markdownlint-docker
 
-Example of use:
+Unofficial docker distribution of markdownlint-cli based on:
+
+* [markdownlint-cli on Github](https://github.com/igorshubovych/markdownlint-cli)
+* [markdownlint-cli on NPMJS](https://www.npmjs.com/package/markdownlint-cli)
+
+## Example of use
 
 ```bash
 docker run --rm \
