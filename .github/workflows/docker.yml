@@ -50,7 +50,7 @@ jobs:
         run: docker save "${{ env.IMAGE_NAME }}:${{ steps.short_sha.outputs.short_sha }}" -o image.tar
 
       - name: Upload image artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: docker-image
           path: image.tar
@@ -64,7 +64,7 @@ jobs:
       MARKDOWNLINT_CLI_VERSION: ${{ needs.build.outputs.markdownlint_cli_version }}
     steps:
       - name: Download built image
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: docker-image
 
