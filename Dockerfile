@@ -5,6 +5,6 @@ WORKDIR /workspace
 RUN npm install -g --ignore-scripts markdownlint-cli@0.49.1 \
  && addgroup -g 1001 appgroup && adduser -D -u 1001 -G appgroup appuser
 
-USER appuser
+USER 1001
 
 ENTRYPOINT ["markdownlint"]
